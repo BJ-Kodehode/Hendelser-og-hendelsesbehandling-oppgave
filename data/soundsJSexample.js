@@ -1,22 +1,22 @@
 export const sounds = [
   {
-    name: "name of the sound",
-    file: "pathTofile",
-    key: "keyboardKeyTobePressed",
+    name: "Fart",
+    file: "https://www.myinstants.com/en/instant/fart/?utm_source=copy&utm_medium=share",
+    key: "i",
   },
   {
-    name: "name of the sound",
-    file: "pathTofile",
-    key: "keyboardKeyTobePressed",
+    name: "Pew Pew",
+    file: "phttps://www.myinstants.com/en/instant/pew_pew/?utm_source=copy&utm_medium=share",
+    key: "o",
   },
   {
-    name: "name of the sound",
-    file: "pathTofile",
-    key: "keyboardKeyTobePressed",
+    name: "Goofy Ahh",
+    file: "https://www.myinstants.com/en/instant/goofy-ahh-sounds-96639/?utm_source=copy&utm_medium=share",
+    key: "p",
   },
   {
-    name: "name of the sound",
-    file: "pathTofile",
-    key: "keyboardKeyTobePressed",
+    name: "Yes King",
+    file: "pathhttps://www.myinstants.com/en/instant/yes-king-ahhhhhhhhhhhhhhhh-17914/?utm_source=copy&utm_medium=shareTofile",
+    key: "u",
   },
 ];
