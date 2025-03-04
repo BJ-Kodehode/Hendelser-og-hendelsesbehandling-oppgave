@@ -1,4 +1,4 @@
-import { sounds } from "./sounds.js";
+import { sounds } from "./soundsJSexample";
 
 // 1.1 Catch the HTML element with id drumkit
 const drumkit = document.getElementById("drumkit");

@@ -1,1 +1,14 @@
-/* Add styles here to make the soundboard actually look like a soundboard! */
+.sound-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sound-button:hover {
+  background-color: #45a049;
+}

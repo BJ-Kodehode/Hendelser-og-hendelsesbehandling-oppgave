@@ -1,22 +1,19 @@
 export const sounds = [
-  {
-    name: "Fart",
-    file: "https://www.myinstants.com/en/instant/fart/?utm_source=copy&utm_medium=share",
-    key: "i",
+  { name: "Fart", 
+    file: "https://www.myinstants.com/media/sounds/fart.mp3", 
+    key: "f" 
   },
-  {
-    name: "Pew Pew",
-    file: "phttps://www.myinstants.com/en/instant/pew_pew/?utm_source=copy&utm_medium=share",
-    key: "o",
+  { 
+    name: "Pew Pew", 
+    file: "https://www.myinstants.com/media/sounds/pewpew.mp3", 
+    key: "p" },
+  { 
+    name: "Goofy Ahh", 
+    file: "https://www.myinstants.com/media/sounds/goofy.mp3", 
+   key: "g" 
   },
-  {
-    name: "Goofy Ahh",
-    file: "https://www.myinstants.com/en/instant/goofy-ahh-sounds-96639/?utm_source=copy&utm_medium=share",
-    key: "p",
-  },
-  {
-    name: "Yes King",
-    file: "pathhttps://www.myinstants.com/en/instant/yes-king-ahhhhhhhhhhhhhhhh-17914/?utm_source=copy&utm_medium=shareTofile",
-    key: "u",
-  },
+  { 
+    name: "Yes King", 
+    file: "https://www.myinstants.com/media/sounds/yesking.mp3", 
+    key: "y" }
 ];
