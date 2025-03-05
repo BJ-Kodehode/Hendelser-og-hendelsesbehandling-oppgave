@@ -1,5 +1,5 @@
 .sound-button {
-  background-color: #4caf50;
+  background-color: rebeccapurple;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -11,13 +11,22 @@
 }
 
 .sound-button:hover {
-  background-color: #45a049;
+  background-color: red;
+  transform: scale(1.4);
 }
 
 #drumkit {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  background-color: seagreen;
+  box-shadow: 9 9 9px turquoise;
+  box-sizing: border-box;
+  height: auto;
+  width: 90%;
+  margin: 24px auto;
+  border-radius: 10px;
 }

@@ -8,5 +8,5 @@ export const sounds = [
   { name: "Laugh", file: "./oh no laugh.mp3", key: "k" },
   { name: "Panjabi", file: "./panjabi.mp3", key: "l" },
   { name: "Pedro", file: "./pedro-song.mp3", key: "m" },
-  { name: "Run", file: "./RUN.mp33", key: "n" },
+  { name: "Run", file: "./RUN.mp3", key: "n" },
 ];
