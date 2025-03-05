@@ -1,52 +1,44 @@
-import { sounds } from "../data/soundsJSexample";
+import { sounds } from "../data/soundsJSexample.js";
 
-// 1.1 Catch the HTML element with id drumkit
+// 1. Hent HTML-elementet med id "drumkit"
 const drumkit = document.getElementById("drumkit");
 
-// 1.2 Console log the drumkit element
-console.log(drumkit);
+// 2. Sjekk at elementet finnes
+if (!drumkit) {
+  console.error("Elementet med ID 'drumkit' finnes ikke.");
+} else {
+  console.log("Lyder lastet inn:", sounds);
 
-// 2. Console log the fetched sounds
-console.log(sounds);
+  // 3. Funksjon for å lage knapper og lyder
+  function createSoundButton(sound) {
+    const button = document.createElement("button");
+    button.textContent = `(${sound.key}) ${sound.name}`;
+    button.classList.add("sound-button");
 
-// 2.2 Console log the keys of the sounds
-sounds.forEach(sound => console.log(sound.key));
+    // 4. Sett opp lydfilen
+    const audio = document.createElement("audio");
+    audio.src = `./data/${sound.file}`;
+    audio.id = sound.key;
 
-// 3. Create a functioning soundboard
-function drumComponent(sound) {
-    // 3.1 Create button element
-    const buttonEl = document.createElement("button");
-    buttonEl.textContent = sound.name;
-    buttonEl.classList.add("sound-button");
-
-    // 3.2 Create audio element
-    const audioEl = document.createElement("audio");
-    audioEl.src = sound.file;
-    audioEl.id = sound.key;
-
-    // 3.3 Add event listener for keydown
-    document.addEventListener("keydown", (event) => {
-        if (event.key.toLowerCase() === sound.key) {
-            audioEl.currentTime = 0;
-            audioEl.play();
-        }
+    // 5. Spill av lyd ved klikk på knapp
+    button.addEventListener("click", () => {
+      audio.currentTime = 0;
+      audio.play();
     });
 
-    // 3.5 Add event listener for button click
-    buttonEl.addEventListener("click", () => {
-        audioEl.currentTime = 0;
-        audioEl.play();
+    // 6. Spill av lyd ved tastetrykk
+    window.addEventListener("keydown", (event) => {
+      if (event.key.toLowerCase() === sound.key.toLowerCase()) {
+        audio.currentTime = 0;
+        audio.play();
+      }
     });
 
-    // 3.6 Append button and audio to drumkit
-    drumkit.appendChild(buttonEl);
-    drumkit.appendChild(audioEl);
-}
+    // 7. Legg til knapp og lyd i "drumkit"
+    drumkit.appendChild(button);
+    drumkit.appendChild(audio);
+  }
 
-// 4. Loop over sounds and create buttons
-function createDrumKit() {
-    sounds.forEach(drumComponent);
+  // 8. Opprett alle knappene
+  sounds.forEach(createSoundButton);
 }
-
-// 4.1 Call function to generate buttons
-createDrumKit();

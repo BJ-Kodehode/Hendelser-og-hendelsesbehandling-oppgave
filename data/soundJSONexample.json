@@ -2,23 +2,25 @@
   "soundFiles": [
     {
       "name": "name of the sound",
-      "file": "pathTofile",
-      "key": "keyboardKeyTobePressed"
+      "file": "./fart.mp3",
+      "key": "f"
     },
     {
       "name": "name of the sound",
-      "file": "pathTofile",
-      "key": "keyboardKeyTobePressed"
+      "file": "./shutup.mp3",
+      "key": "p"
     },
     {
       "name": "name of the sound",
-      "file": "pathTofile",
-      "key": "keyboardKeyTobePressed"
+      "file": "./WOW MEME.mp3",
+      "key": "g"
     },
     {
       "name": "name of the sound",
-      "file": "pathTofile",
-      "key": "keyboardKeyTobePressed"
+      "file": "./yes-king.mp3",
+      "key": "y"
     }
   ]
 }
+
+
