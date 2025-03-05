@@ -9,4 +9,7 @@ export const sounds = [
   { name: "Panjabi", file: "./panjabi.mp3", key: "l" },
   { name: "Pedro", file: "./pedro-song.mp3", key: "m" },
   { name: "Run", file: "./RUN.mp3", key: "n" },
+  { name: "Monster", file: "./mk.mp3", key: "b" },
+  { name: "Nope", file: "./engineer_no01_1.mp3", key: "v" },
+  { name: "Dmage", file: "./emotional-damage-meme.mp3", key: "c" },
 ];

@@ -21,17 +21,29 @@ if (!drumkit) {
     audio.id = sound.key;
 
     // 5. Spill av lyd ved klikk på knapp
-    button.addEventListener("click", () => {
-      audio.currentTime = 0;
-      audio.play();
+    button.addEventListener("click", function () {
+        const allAudios = document.querySelectorAll("audio");
+        allAudios.forEach((a) => {
+          if (!a.paused) {
+            a.pause();
+            a.currentTime = 0;
+          }
+        });
+        audio.play();
     });
 
     // 6. Spill av lyd ved tastetrykk
-    window.addEventListener("keydown", (event) => {
-      if (event.key.toLowerCase() === sound.key.toLowerCase()) {
-        audio.currentTime = 0;
-        audio.play();
-      }
+    window.addEventListener("keydown", function (event) {
+        if (event.key === sound.key) {
+          const allAudios = document.querySelectorAll("audio");
+          allAudios.forEach((a) => {
+            if (!a.paused) {
+              a.pause();
+              a.currentTime = 0;
+            }
+          });
+          audio.play();
+        }
     });
 
     // 7. Legg til knapp og lyd i "drumkit"
