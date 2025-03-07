@@ -12,4 +12,5 @@ export const sounds = [
   { name: "Monster", file: "./mk.mp3", key: "b" },
   { name: "Nope", file: "./engineer_no01_1.mp3", key: "v" },
   { name: "Dmage", file: "./emotional-damage-meme.mp3", key: "c" },
+  { name: "You", file: "./you-are-an-idiot.mp3", key: "r" },
 ];
